@@ -31,9 +31,7 @@
     <tbody>
     <tr th:each="product, loop : ${products}">
       <td scope="row" th:text="${loop.count}"></td>
-      <td>
-        <img src="@{}">
-      </td>
+      <td th:text="${product.image}"></td>
       <td th:text="${product.price}"></td>
       <td th:text="${product.productName}"></td>
       <td th:text="${product.category.name}"></td>
